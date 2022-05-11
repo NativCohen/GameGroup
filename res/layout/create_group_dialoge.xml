@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="117dp"
+        android:src="@drawable/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/edGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Group Name"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="208dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/edMaxPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Max Players"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="344dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Select Date"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="City"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="107dp"
+        android:layout_height="71dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="submit"
+        android:textColor="#000000"
+        app:cornerRadius="100dp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="468dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
